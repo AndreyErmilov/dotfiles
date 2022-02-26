@@ -25,6 +25,9 @@ function! PackagerInit() abort
   call packager#add('kyazdani42/nvim-tree.lua')                                 " File explorer
 
   call packager#add('ntk148v/vim-horizon')                                      " Horizon theme
+
+  call packager#add('tpope/vim-surround')                                       " Insert or delete brackets, parens, quotes in pair.
+  call packager#add('scrooloose/NERDCommenter')                                 " Commenter
 endfunction
 
 command! PackagerInstall call PackagerInit() | call packager#install()
