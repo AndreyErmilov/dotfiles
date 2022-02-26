@@ -1,2 +1,4 @@
-# dotfiles
-Neovim settings
+# Dotfile for Neovim
+
+## How to use
+WIP
