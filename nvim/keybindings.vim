@@ -7,6 +7,7 @@ nnoremap <A-Left> :tabp<CR>
 
 " Change buffers
 nnoremap <A-h> :bp!<CR>
+nnoremap <A-l> :bn!<CR>
 
 " LSP key bindings
 nnoremap <silent> gd         <cmd>lua vim.lsp.buf.definition()<CR>

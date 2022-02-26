@@ -3,11 +3,14 @@ function! PackagerInit() abort
   call packager#init()
   call packager#add('kristijanhusak/vim-packager', { 'type': 'opt' })           " Package manager
 
-  call packager#add('hrsh7th/cmp-nvim-lsp')
+  call packager#add('hrsh7th/cmp-nvim-lsp')                                     " All for Completion
   call packager#add('hrsh7th/cmp-buffer')
   call packager#add('hrsh7th/cmp-path')
   call packager#add('hrsh7th/cmp-cmdline')
   call packager#add('hrsh7th/nvim-cmp')
+
+  call packager#add('hrsh7th/cmp-vsnip')                                        " Snippets
+  call packager#add('hrsh7th/vim-vsnip')
 
   call packager#add('nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'})     " Syntax parser and highliter
   call packager#add('neovim/nvim-lspconfig')                                    " LSP configuration defaults
@@ -16,6 +19,8 @@ function! PackagerInit() abort
   call packager#add('vim-airline/vim-airline')                                  " Statusline
   call packager#add('vim-airline/vim-airline-themes')                           " Statusline themes
   call packager#add('ryanoasis/vim-devicons')                                   " Icons
+  call packager#add('kyazdani42/nvim-web-devicons')                             " Icons
+  call packager#add('akinsho/bufferline.nvim')                                  " Tabs
 
   call packager#add('kyazdani42/nvim-tree.lua')                                 " File explorer
 
