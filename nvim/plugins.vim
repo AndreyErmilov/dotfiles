@@ -28,6 +28,9 @@ function! PackagerInit() abort
 
   call packager#add('tpope/vim-surround')                                       " Insert or delete brackets, parens, quotes in pair.
   call packager#add('scrooloose/NERDCommenter')                                 " Commenter
+
+  call packager#add('f-person/git-blame.nvim')                                  " Git blame
+
 endfunction
 
 command! PackagerInstall call PackagerInit() | call packager#install()

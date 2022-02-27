@@ -13,3 +13,7 @@ nnoremap <A-l> :bn!<CR>
 nnoremap <silent> gd         <cmd>lua vim.lsp.buf.definition()<CR>
 nnoremap <silent> K          <cmd>lua vim.lsp.buf.hover()<CR>
 nnoremap <silent> <leader>f  <cmd>lua vim.lsp.buf.formatting()<Cr>
+
+" Git
+" Toggle blame
+nnoremap <C-h> :GitBlameToggle<CR>

@@ -13,3 +13,6 @@ set cursorline
 
 " For icons
 set encoding=UTF-8
+
+" Git blame
+let g:gitblame_enabled = 0
