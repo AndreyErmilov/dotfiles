@@ -14,6 +14,7 @@ function! PackagerInit() abort
 
   call packager#add('nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'})     " Syntax parser and highliter
   call packager#add('neovim/nvim-lspconfig')                                    " LSP configuration defaults
+  call packager#add('williamboman/nvim-lsp-installer')                          " LSP instances 
   call packager#add('reasonml-editor/vim-reason-plus')                          " LSP configuration defaults
 
   call packager#add('vim-airline/vim-airline')                                  " Statusline
@@ -30,7 +31,8 @@ function! PackagerInit() abort
   call packager#add('scrooloose/NERDCommenter')                                 " Commenter
 
   call packager#add('f-person/git-blame.nvim')                                  " Git blame
-
+  call packager#add('nvim-lua/plenary.nvim')                                    " Git diff
+  call packager#add('sindrets/diffview.nvim')                                   " Git diff 
 endfunction
 
 command! PackagerInstall call PackagerInit() | call packager#install()

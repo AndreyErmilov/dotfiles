@@ -17,3 +17,7 @@ nnoremap <silent> <leader>f  <cmd>lua vim.lsp.buf.formatting()<Cr>
 " Git
 " Toggle blame
 nnoremap <C-h> :GitBlameToggle<CR>
+" Diff Open
+nnoremap <C-d> :DiffviewOpen<CR>
+nnoremap <C-w> :DiffviewClose<CR>
+
