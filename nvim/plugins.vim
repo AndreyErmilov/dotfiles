@@ -27,13 +27,16 @@ function! PackagerInit() abort
 
   call packager#add('ntk148v/vim-horizon')                                      " Horizon theme
 
-  call packager#add('tpope/vim-surround')                                       " Insert or delete brackets, parens, quotes in pair.
+  call packager#add('tpope/vim-surround')                                       " Insert or delete brackets
   call packager#add('scrooloose/NERDCommenter')                                 " Commenter
 
   call packager#add('f-person/git-blame.nvim')                                  " Git blame
   call packager#add('nvim-lua/plenary.nvim')                                    " Git diff
   call packager#add('sindrets/diffview.nvim')                                   " Git diff 
-  call packager#add('airblade/vim-gitgutter.git')                               " Git diff 
+  call packager#add('airblade/vim-gitgutter.git')                               " Show changes
+
+  call packager#add('nvim-telescope/telescope.nvim')                            " Find, filter, preview etc.
+  call packager#add('lotabout/skim', { 'dir': '~/.skim', 'do': './install' })   " Find, filter, preview etc.
 endfunction
 
 command! PackagerInstall call PackagerInit() | call packager#install()
