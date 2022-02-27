@@ -33,6 +33,7 @@ function! PackagerInit() abort
   call packager#add('f-person/git-blame.nvim')                                  " Git blame
   call packager#add('nvim-lua/plenary.nvim')                                    " Git diff
   call packager#add('sindrets/diffview.nvim')                                   " Git diff 
+  call packager#add('airblade/vim-gitgutter.git')                               " Git diff 
 endfunction
 
 command! PackagerInstall call PackagerInit() | call packager#install()
