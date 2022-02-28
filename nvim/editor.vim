@@ -5,8 +5,8 @@ set number relativenumber
 set signcolumn=yes
 
 " Language
-let g:myLang = 0
-let g:myLangList = ['nospell', 'en_us,ru_yo']
+let g:myLang=0
+let g:myLangList=['nospell', 'en_us,ru_yo']
 
 " Show current cursor line
 set cursorline
@@ -15,4 +15,9 @@ set cursorline
 set encoding=UTF-8
 
 " Git blame
-let g:gitblame_enabled = 0
+let g:gitblame_enabled=0
+
+" Tabs
+set tabstop=2
+set shiftwidth=2
+
