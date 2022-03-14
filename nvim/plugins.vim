@@ -16,6 +16,9 @@ function! PackagerInit() abort
   call packager#add('neovim/nvim-lspconfig')                                    " LSP configuration defaults
   call packager#add('williamboman/nvim-lsp-installer')                          " LSP instances 
   call packager#add('reasonml-editor/vim-reason-plus')                          " LSP configuration defaults
+  call packager#add('jubnzv/virtual-types.nvim')                                " WIP
+	call packager#add('folke/trouble.nvim')																				" A pretty diagnostics
+	call packager#add('folke/lsp-colors.nvim')																		" A pretty diagnostics
 
   call packager#add('vim-airline/vim-airline')                                  " Statusline
   call packager#add('vim-airline/vim-airline-themes')                           " Statusline themes
