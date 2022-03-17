@@ -14,9 +14,9 @@ set cursorline
 " For icons
 set encoding=UTF-8
 
-" Git blame
-let g:gitblame_enabled=0
-
 " Tabs
 set tabstop=2
 set shiftwidth=2
+
+" Clipboard
+set clipboard+=unnamedplus

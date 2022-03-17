@@ -9,17 +9,15 @@ nnoremap <A-Left> :tabp<CR>
 nnoremap <A-h> :bp!<CR>
 nnoremap <A-l> :bn!<CR>
 
+" Delete buffer
+nnoremap <A-k> :bdelete<CR>
+
 " LSP key bindings
 nnoremap <silent> gd         <cmd>lua vim.lsp.buf.definition()<CR>
 nnoremap <silent> K          <cmd>lua vim.lsp.buf.hover()<CR>
 nnoremap <silent> <leader>f  <cmd>lua vim.lsp.buf.formatting()<Cr>
 
 " Git
-" Toggle blame
-nnoremap <C-h> :GitBlameToggle<CR>
-" Diff Open
-nnoremap <C-d> :DiffviewOpen<CR>
-nnoremap <C-w> :DiffviewClose<CR>
 
 " Telescope
 nnoremap <leader>ff <cmd>Telescope find_files<CR>

@@ -16,7 +16,6 @@ function! PackagerInit() abort
   call packager#add('neovim/nvim-lspconfig')                                    " LSP configuration defaults
   call packager#add('williamboman/nvim-lsp-installer')                          " LSP instances 
   call packager#add('reasonml-editor/vim-reason-plus')                          " LSP configuration defaults
-  call packager#add('jubnzv/virtual-types.nvim')                                " WIP
 	call packager#add('folke/trouble.nvim')																				" A pretty diagnostics
 	call packager#add('folke/lsp-colors.nvim')																		" A pretty diagnostics
 
@@ -33,13 +32,15 @@ function! PackagerInit() abort
   call packager#add('tpope/vim-surround')                                       " Insert or delete brackets
   call packager#add('scrooloose/NERDCommenter')                                 " Commenter
 
-  call packager#add('f-person/git-blame.nvim')                                  " Git blame
-  call packager#add('nvim-lua/plenary.nvim')                                    " Git diff
-  call packager#add('sindrets/diffview.nvim')                                   " Git diff 
-  call packager#add('airblade/vim-gitgutter.git')                               " Show changes
+	call packager#add('airblade/vim-gitgutter.git')                               " Show changes
+	call packager#add('tpope/vim-fugitive')                                       " Git wrapper
 
   call packager#add('nvim-telescope/telescope.nvim')                            " Find, filter, preview etc.
   call packager#add('lotabout/skim', { 'dir': '~/.skim', 'do': './install' })   " Find, filter, preview etc.
+
+  call packager#add('weirongxu/plantuml-previewer.vim') 										    " PlantUML
+  call packager#add('tyru/open-browser.vim')
+  call packager#add('aklt/plantuml-syntax')
 endfunction
 
 command! PackagerInstall call PackagerInit() | call packager#install()
