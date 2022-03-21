@@ -41,6 +41,7 @@ function! PackagerInit() abort
   call packager#add('weirongxu/plantuml-previewer.vim') 										    " PlantUML
   call packager#add('tyru/open-browser.vim')
   call packager#add('aklt/plantuml-syntax')
+  call packager#add('iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']})
 endfunction
 
 command! PackagerInstall call PackagerInit() | call packager#install()
