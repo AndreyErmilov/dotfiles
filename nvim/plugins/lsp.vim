@@ -17,5 +17,6 @@ lsp_neovim.rust_analyzer.setup{
     enable = true
   },
 }
+
 EOF
 

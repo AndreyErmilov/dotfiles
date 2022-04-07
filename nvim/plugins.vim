@@ -16,8 +16,7 @@ function! PackagerInit() abort
   call packager#add('neovim/nvim-lspconfig')                                    " LSP configuration defaults
   call packager#add('williamboman/nvim-lsp-installer')                          " LSP instances 
   call packager#add('reasonml-editor/vim-reason-plus')                          " LSP configuration defaults
-  call packager#add('folke/trouble.nvim')																				" A pretty diagnostics
-  call packager#add('folke/lsp-colors.nvim')																		" A pretty diagnostics
+	call packager#add('folke/lsp-colors.nvim')																		" A pretty diagnostics
 
   call packager#add('vim-airline/vim-airline')                                  " Statusline
   call packager#add('vim-airline/vim-airline-themes')                           " Statusline themes
@@ -27,19 +26,19 @@ function! PackagerInit() abort
 
   call packager#add('kyazdani42/nvim-tree.lua')                                 " File explorer
 
-  call packager#add('ntk148v/vim-horizon')                                      " Horizon theme
+  call packager#add('sainnhe/edge')                                             " Color scheme
 
   call packager#add('tpope/vim-surround')                                       " Insert or delete brackets
   call packager#add('scrooloose/NERDCommenter')                                 " Commenter
 
-  call packager#add('airblade/vim-gitgutter.git')                               " Show changes
-  call packager#add('tpope/vim-fugitive')                                       " Git wrapper
+	call packager#add('airblade/vim-gitgutter.git')                               " Show changes
+	call packager#add('tpope/vim-fugitive')                                       " Git wrapper
 
   call packager#add('nvim-telescope/telescope.nvim')                            " Find, filter, preview etc.
-  call packager#add('nvim-lua/plenary.nvim')
+	call packager#add('nvim-lua/plenary.nvim')
   call packager#add('lotabout/skim', { 'dir': '~/.skim', 'do': './install' })
 
-  call packager#add('weirongxu/plantuml-previewer.vim')                         " PlantUML
+  call packager#add('weirongxu/plantuml-previewer.vim') 										    " PlantUML
   call packager#add('tyru/open-browser.vim')
   call packager#add('aklt/plantuml-syntax')
   call packager#add('iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']})
